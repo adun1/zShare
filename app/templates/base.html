@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - boatShare</title>
+        {% else %}
+        <title>boatShare</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>BoatShare: <a href="/index">Home</a></div>
+        <hr />
+        {% block content %}{% endblock %}
+    </body>
+</html>
